@@ -1,26 +1,20 @@
-<div id="home-container">
-  <div id="intro-section">
-    <div class="overlay" [style.height.px]="windowHeight"></div>
-    <div [style.height.px]="windowHeight"
-         class="container">
-      <div class="row">
-        <div id="main-marquee">
-          <div class="row">
-            <div [style.top.px]="halfWindowHeight" class="col-sm-12">
-              <div id="intro-container">
-                <h1 id="intro-name">gae-ng4-base Beta</h1>
-                <h2 id="intro-title">Mining Payment Tracker</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!--Start Navbar-->
+<nav class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">gae-ng4-base</a>
   </div>
 
-  <div id="main-container">
+  <div class="collapse navbar-collapse js-navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown mega-dropdown">
+      <li><a href="/dashboard">Dashboard</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/user">User</a></li>
+    </ul>
   </div>
-</div>
+</nav>
+<!--End Navbar-->
 
 <div class="site-gradient">
   <router-outlet></router-outlet>
